@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+.logo {
+  color: #ffffff;   /* white */
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero,
+.hero * {
+  color: #ffffff;
+}
+
+\.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+}
+
+/*.hero h1 span {
+  color: #ffd700;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}*/
+.hero button {
+  background: #ffffff;
+  color: #0b132b;   /* dark blue text */
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+.hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  text-align: center;
+  padding: 100px 20px 40px;
+  background-color: #0a1f44;
+  color: white; 
+}
+
+.hero-text{
+  max-width: 850px;
+}
+
+
+
+/* About */
+.about {
+  padding: 80px 10%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.facts span {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+
+/* Skills */
+.skills {
+  padding: 60px 10%;
+  background: #f5f5f5;
+  color: #0b1f44;   
+}
+
+.skill-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-box div {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 10%;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 80%;
+}
+
+/* Contact */
+.contact {
+  padding: 40px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+/* Dark Blue Mode */
+body {
+  background-color: #0a1f44; /* Navy Blue */
+  color: white;
+}
+
+body.dark {
+  background: #0b132b;
+  color: #eaeaea;
+}
+
+body.dark .header {
+  background: #1c2541;
+}
+
+body.dark a {
+  color: #eaeaea;
+}
+
+body.dark .skills,
+body.dark .gallery {
+  background: #0b173c;
+}
+
+body.dark .skill-box div {
+  background: #1456a8;
+  color: white;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resume {
+  padding: 60px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2575fc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.resume-btn:hover {
+  transform: scale(1.1);
+}
+@keyframes drift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-60px); }
+}
+
+.bg-grid{
+  animation: drift 10s ease-in-out infinite alternate;
+}
+
+nav {
+  background-color: #0a1f44;
+}
+nav a {
+  color: white;
+}
+h1, h2, p {
+  color: #0a1f44;
+}
+button {
+  background-color: #0a1f44;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+}
+.header nav a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.header {
+  background: #0b1f44; /* dark blue */
+}

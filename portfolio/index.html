@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yele Dhana Vaishnavi | UI Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h2 class="logo">Vaishnavi</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-toggle">🌙</button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Dhana Vaishnavi</span></h1>
+    <p>Frontend / UI Developer/Software Engineer</p>
+    <button onclick="scrollToSection()">View My Work</button>
+  </div>
+</section>
+
+
+<section class="about " id="about">
+  <img src="images/profile.jpg" alt="profile">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I’m a UI & Frontend Developer passionate about building clean, responsive, and user-friendly web interfaces. I enjoy crafting visually appealing designs 
+      backed by solid functionality using HTML, CSS, JavaScript and Python.
+      I’m constantly learning, experimenting, and improving my skills to create better digital experiences..
+    </p>
+    <div class="facts">
+      <span>🌍 English, Telugu</span>
+      <span>🎓 Google AI/ML Certified</span>
+      <span>💡 UI & Problem Solving</span>
+      <span>🎓Cisco Data Analytics Certified</span>
+    </div>
+  </div>
+</section>
+
+<section class="skills reveal" id="skills">
+  <h2>My Skills</h2>
+  <div class="skill-box">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Python</div>
+    <div>SQL</div>
+  </div>
+</section>
+
+<section class="gallery reveal" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/gallery1.jpg" onclick="openModal(this.src)">
+    <img src="images/gallery2.jpg" onclick="openModal(this.src)">
+    <img src="images/gallery3.jpg" onclick="openModal(this.src)">
+    <img src="images/gallery4.jpg" onclick="openModal(this.src)">
+  </div>
+</section>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+<section class="resume reveal">
+  <h2>My Resume</h2>
+  <p>Download my resume to know more about my skills and experience.</p>
+  <a href="YELE_DHANAVAISHNAVI_RESUME.pdf" download class="resume-btn">Download Resume</a>
+</section>
+
+
+<section class="contact reveal" id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: dhanavaishnaviyele@email.com</p>
+  <p>GitHub: github.com/dhanavaishnavi09</p>
+</section>
+
+</body>
+</html>
